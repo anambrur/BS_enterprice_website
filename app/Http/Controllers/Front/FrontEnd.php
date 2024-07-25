@@ -113,7 +113,7 @@ class FrontEnd extends Controller
             ->where('categoryable_type', 'App\Model\Common\Portfolio')
             ->get();
 
-        $data["portfolios_data"] = Portfolio::orderBy('sortby', 'ASC')->take(12)->get();
+        $data["portfolios_data"] = Portfolio::orderBy('id', 'ASC')->take(12)->get();
 
         // $data["portfolios_data"]  = DB::table('portfolios') 
         //                     ->leftJoin('categoryables', 'categoryables.categoryable_id', '=', 'portfolios.id') 
@@ -778,7 +778,7 @@ class FrontEnd extends Controller
                ->latest()
                ->get();*/
 
-        $data["portfolios_data"] = Portfolio::orderBy('sortby', 'ASC')->get();
+        $data["portfolios_data"] = Portfolio::orderBy('id', 'ASC')->get();
         //        $data["portfolios_data"] = DB::table('portfolios')
         //            ->leftJoin('categoryables', 'categoryables.categoryable_id', '=', 'portfolios.id')
         //            ->select('portfolios.*', 'categoryables.category_id')

@@ -67,7 +67,7 @@ function generateInput(html, value, formattedValue) {
         $(document).on('click', '.delete_data_row', function () {
             var url = $(this).attr('href');
             var delete_row = $(this).attr('delete_row');
-            var delete_message = $(this).attr('delete_message');
+            var delete_message = $(this).attr(' ');
             swal({
                 title: "Are you sure?",
                 text: delete_message,

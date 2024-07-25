@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: mrksohag
@@ -11,6 +12,7 @@ return [
 	"save"              => "Save",
 	"update"            => "Update",
 	"title"             => "Title",
+	"certifictions"		=> "Certifications",
 	"subtitle"          => "Subtitle",
 	"subtitle2"         => "Subtitle Line 2",
 	"description"       => "Description",
